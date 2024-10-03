@@ -1,0 +1,66 @@
+body.login-background {
+    background-image: url('assets/img/hero/h1_hero.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	background-color:rgba(66, 66, 66, 0.599);
+	opacity:0.70;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    text-align: left;
+}
+.form-group input {
+    width:80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+.form-actions {
+    margin-top: 20px;
+}
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    background:red;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+	height:40px;
+	width:120px;
+	font-size:15px;
+}
+.form-actions button:hover {
+    background:#620202;
+}
+.form-links {
+    margin-top: 15px;
+}
+.form-links a {
+    color: #ff0000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.form-links a:hover {
+    color: #b50000;
+}

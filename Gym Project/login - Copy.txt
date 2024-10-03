@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/img/logo.png" />
+</head>
+<script>
+    function verif()
+    {
+    p=f.p.value;
+    if(p.length<8){alert("password length minimum 8");return false;}
+    window.open("Member/index.html","_self");
+    }
+    </script>
+<body class="login-background">
+
+<a href="index.html"><img style="position: absolute;width:12%;margin-left: 90px;; margin-top: -250px;" src="assets/img/logo/logo.png"></a>
+    <div class="login-container">
+        <h1 style="color: red;margin-top: -5px;">Log In</h1>
+        <div style="width: 75%; height: 6px; background-color: red; margin-top: -10px;border-radius: 10px; margin-bottom: 20px;margin-left: 38px;"></div>
+
+        <form name="f">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <i class="fa fa-user" style="font-size:28px;color:red;position:absolute;margin-left:-27px;margin-top:3px;"></i>
+                <input type="text" id="u" name="u" required placeholder="Username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <i class="fa fa-lock" style="font-size:30px;color:red;position:absolute;margin-left:-27px;margin-top:3px;"></i>
+                <input type="password" id="p" name="p" required placeholder="Password">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" style="text-font:500px;" onclick="verif()">Connect</button>
+            </div>
+            <div class="form-links">
+                <a href="login.html">Forgot Password ?</a>
+                <span>|</span>
+                <a href="signup.html">Become A Member</a>
+            </div>
+        </form>
+    </div>
+</body>
